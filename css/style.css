@@ -1,0 +1,43 @@
+.loading-area{
+	position: relative;
+    background: #333333;
+    opacity: .5;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.loading-area span{
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 25px;
+	animation: animate 1.8s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+#layout-body{
+	display: none;
+}
+#layout-body {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+@Keyframes animate{
+	0%{
+		transform: translateY(0px);
+	}
+	20%{
+		transform: translateY(-20px);
+	}
+	40%, 100%{
+		transform: translateY(0px);
+	}
+}
