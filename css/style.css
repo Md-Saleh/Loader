@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+}
 .loading-area{
 	position: relative;
     background: #333333;
@@ -13,11 +16,8 @@
 	display: inline-block;
 	color: #ffffff;
 	font-size: 25px;
-	animation: animate 1.8s ease-in-out infinite;
+	animation: animate 1.5s ease-in-out infinite;
 	animation-delay: calc(0.1s * var(--i));
-}
-#layout-body{
-	display: none;
 }
 #layout-body {
   position: relative;
